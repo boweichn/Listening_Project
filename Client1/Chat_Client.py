@@ -18,7 +18,7 @@ class Server:
                 clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                 clientsocket.connect(('localhost', 8087))               #connect to server
                 clientsocket.send(userInput.encode('utf-8'))
-                breaktest
+                break
 
 if __name__ == "__main__":
     Server = Server()                                             # create instance
