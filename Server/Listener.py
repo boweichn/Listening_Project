@@ -13,7 +13,6 @@ while True:
     # buf_info = connection.getpeername() \ this is to get port for client info.
     if len(buf) > 0 and buf.decode("utf-8") != 'quit':
         print(buf.decode("utf-8"))
-        print(buf_info)
     elif buf.decode("utf-8") == 'quit':
         break
         
